@@ -3,7 +3,19 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Description>.NET binding for the QMC5883L magnetometer with calibration and compass helpers.</Description>
+    <Authors>Alexander Benedix</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/wizkah/Qmc5883l-dotnet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/wizkah/Qmc5883l-dotnet</RepositoryUrl>
+    <PackageTags>qmc5883l;magnetometer;compass;i2c;iot;raspberry-pi</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="sample\**" />
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MathNet.Numerics" Version="4.9.1" />
